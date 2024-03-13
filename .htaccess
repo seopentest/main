@@ -1,5 +1,0 @@
-RewriteEngine On
-# Check to ensure the request is not for the 'seo' directory to prevent a loop
-RewriteCond %{REQUEST_URI} !^/seo/
-# Redirect requests to the 'seo' directory
-RewriteRule ^(.*)$ /seo/$1 [R=301,L]
